@@ -60,4 +60,26 @@ public class ProfissionalService {
 
     }
 
+
+
+
+
+    public ProfissionalDTO getId(Long id){
+
+        Profissional profissa = PRepository.findById(id).orElseThrow(()-> new RuntimeException("Profissional " +
+                "Inexistente"));
+
+        ProfissionalDTO PDTO = new ProfissionalDTO(
+
+                profissa.getId(),
+                profissa.getName(),
+                profissa.getEmail(),
+                profissa.getCPF()
+
+
+
+                );
+        return PDTO;
+    }
+
 }

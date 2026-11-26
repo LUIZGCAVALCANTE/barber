@@ -1,6 +1,7 @@
 package com.izvoc.barber.Controller;
 
 import com.izvoc.barber.DTO.ProfissionalDTO;
+import com.izvoc.barber.Entities.Profissional;
 import com.izvoc.barber.Service.ProfissionalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -30,5 +31,14 @@ public class ProfissionalController {
 
         return ProService.getAll();
     }
+    @GetMapping("/get/{id}")
+
+    public ProfissionalDTO getId(@PathVariable Long id){
+
+        return ProService.getId(id);
+
+    }
+
+
 
 }
