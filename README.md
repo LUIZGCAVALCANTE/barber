@@ -25,8 +25,8 @@ O projeto foi desenvolvido com Java e Spring Boot no backend, utilizando HTML, C
 ## 🚀 Funcionalidades
 
 - [x] Estrutura inicial do projeto
-- [ ] Cadastro de clientes
-- [ ] Cadastro de barbeiros
+- [x] Cadastro de clientes
+- [x] Cadastro de barbeiros
 - [ ] Cadastro de serviços
 - [ ] Gerenciamento de agendamentos
 - [ ] Consulta de horários disponíveis
